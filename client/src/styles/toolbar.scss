@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 4px 5px gray;
+  z-index: 999;
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 22px;
+    background-size: cover;
+    line-height: 25px;
+    background-color: #fff;
+  }
+
+  .rect {
+    border-radius: 3px;
+    background-color: #000;
+  }
+
+  .lastik {
+    background: url(../assets/lastik.png) no-repeat center center;
+  }
+
+  .line {
+    background: url(../assets/line.png) no-repeat center center;
+  }
+
+  .undo {
+    background: url(../assets/undo.png) no-repeat center center;
+    margin-left: auto;
+  }
+
+  .redo {
+    background: url(../assets/redo.png) no-repeat center center;
+  }
+
+  .save {
+    background: url(../assets/save.png) no-repeat center center;
+    margin-right: 10px;
+  }
+}
+
+.setting-bar {
+  height: $toolbar-height;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 4px 5px gray;
+  margin-top: $toolbar-height;
+  z-index: 1;
+
+  
+  input{
+    margin: 0 10px;
+  }
+}
